@@ -9,5 +9,6 @@ for _ in range(int(sys.argv[1])):
             f.write("print('Hello world')\n")
         f.write('""" --IM_ES_N """\n')
     system('git add .')
-    system('git commit -m "bug fixed!"')
+    system('git commit -m "working on model!"')
+    system('git push')
     sleep(3)
