@@ -13,5 +13,5 @@ class Post(models.Model):
         ordering = ['created_at']
 
 class Like(models.Model):
-    likes = models.ForeignKey(User,on_delete=models.CASCADE)
+    liker = models.ForeignKey(User,on_delete=models.CASCADE)
     post  = models.ForeignKey(Post,on_delete=models.CASCADE)
